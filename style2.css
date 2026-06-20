@@ -537,7 +537,7 @@ h3{
 .skillsColoumn:nth-child(1) .skillsContent .progress:nth-child(7) .bar span{ width: 80%; }
 
 .skillsColoumn:nth-child(2) .skillsContent .progress:nth-child(1) .bar span{ width: 80%; }
-.skillsColoumn:nth-child(2) .skillsContent .progress:nth-child(2) .bar span{ width: 90%; }
+.skillsColoumn:nth-child(2) .skillsContent .progress:nth-child(2) .bar span{ width: 80%; }
 
 /* ============ CONTACT ============ */
 
