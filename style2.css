@@ -930,10 +930,10 @@ span{
 }
 
 .journey-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    gap: 2.5rem;
-    margin-top: 5rem;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 2rem;
+    width: 100%;
 }
 
 .journey-card{
@@ -1012,7 +1012,6 @@ span{
         padding: 2.5rem;
     }
 }
-
 
 
 /* ============ SKILLS ============ */
@@ -1644,3 +1643,16 @@ span{
     border-radius: 2rem;
     font-size: 1.3rem;
 }       
+.role{
+    font-size:20px;
+    font-weight:600;
+    color:#2563eb;
+    margin-top:10px;
+}
+
+.tagline{
+    margin:15px 30px;
+    color:#666;
+    font-size:15px;
+    line-height:1.7;
+}
