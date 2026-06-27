@@ -930,8 +930,8 @@ span{
 }
 
 .journey-container{
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
     gap: 2rem;
     width: 100%;
 }
