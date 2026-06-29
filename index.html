@@ -14,17 +14,34 @@
         <a href="#"class="logo">GAGAN.<span class="animate"style="--i:1;"></span></a>
         <div class="bx bx-menu" id="menuicon"><span class="animate"style="--i:2;"></span></div>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Project</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-           
+            <a href="#home" class="active" id="nav-home">Home</a>
+            <a href="#about" id="nav-about">About</a>
+            <a href="#education" id="nav-education">Education</a>
+            <a href="#projects" id="nav-projects">Project</a>
+            <a href="#skills" id="nav-skills">Skills</a>
+            <a href="#contact" id="nav-contact">Contact</a>
 
             <span class="active-nav"></span>
             <span class="animate"style="--i:2;"></span>
         </nav>
+
+        <div class="header-controls">
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                <i class='bx bx-moon'></i>
+            </button>
+
+            <div class="lang-switcher" aria-label="Language switcher">
+                <button type="button" class="translate-toggle" id="translate-toggle" aria-label="Translate language">
+                    <i class='bx bx-globe'></i>
+                </button>
+                <div class="lang-menu" id="lang-menu">
+                    <button type="button" class="lang-btn active" data-lang="en">English</button>
+                    <button type="button" class="lang-btn" data-lang="hi">हिंदी</button>
+                    <button type="button" class="lang-btn" data-lang="or">ଓଡ଼ିଆ</button>
+                    <button type="button" class="lang-btn" data-lang="te">తెలుగు</button>
+                </div>
+            </div>
+        </div>
     </header>
 
     <div class="stars">
@@ -42,20 +59,20 @@
 
     <div class="home-content">
 
-        <span class="tag">Frontend & Web Developer</span>
+        <span class="tag" id="home-tag">Frontend & Web Developer</span>
 
-        <h1>Hi, I'm <span>Gagan</span></h1>
+        <h1 id="home-heading">Hi, I'm <span>Gagan</span></h1>
 
-        <h3>Building Modern Web Experiences</h3>
+        <h3 id="home-subtitle">Building Modern Web Experiences</h3>
 
-        <p>
+        <p id="home-desc">
             Passionate Frontend & Web Developer specializing in
             React.js, Next.js, Node.js, MongoDB, Express.js and MySQL.
         </p>
 
         <div class="btn-box">
-            <a href="#contact" class="btn">Hire Me</a>
-            <a href="#about" class="btn">Lets Talk</a>
+            <a href="#contact" class="btn" id="home-btn-1">Hire Me</a>
+            <a href="#about" class="btn" id="home-btn-2">Lets Talk</a>
         </div>
 
     </div>
@@ -84,13 +101,13 @@
                 <img src="profile.jpg" alt="Gagan">
             </div>
 
-            <h2>Gagan</h2>
+            <h2 id="profile-name">Gagan</h2>
 
-<p class="role">
+<p class="role" id="home-role">
     Frontend & Web Developer
 </p>
 
-<p class="tagline">
+<p class="tagline" id="home-tagline">
     Turning ideas into responsive, scalable, and visually appealing web experiences with modern technologies.
 </p>
         </div>
@@ -104,7 +121,7 @@
 <section id="about" class="about-section">
     <div class="container">
 
-        <h2 class="section-title">
+        <h2 class="section-title" id="about-title">
             About <span>Me</span>
         </h2>
 
@@ -134,7 +151,7 @@
                 </div>
 
                 <div class="about-content">
-                    <p>
+                    <p id="about-p1">
                         Hi, I'm <strong>Gagan</strong>, a passionate
                         <span>Frontend & Web Developer</span>
                         who enjoys building modern, responsive, and user-friendly web applications.
@@ -142,7 +159,7 @@
 
                     <br>
 
-                    <p>
+                    <p id="about-p2">
                         I specialize in HTML, CSS, JavaScript, React.js, Next.js,
                         Node.js, Express.js, MongoDB, and MySQL. I focus on creating
                         clean, efficient, and scalable solutions that provide excellent
@@ -151,7 +168,7 @@
 
                     <br>
 
-                    <p>
+                    <p id="about-p3">
                         With hands-on project experience and a strong foundation in
                         software development, I continuously explore new technologies
                         and improve my skills to stay updated with industry trends.
@@ -159,7 +176,7 @@
 
                     <br>
 
-                    <p>
+                    <p id="about-p4">
                         My goal is to contribute to impactful projects, solve real-world
                         problems through technology, and grow as a professional software developer.
                     </p>
@@ -175,7 +192,7 @@
      
 <section class="education" id="education">
 
-    <h2 class="heading">
+    <h2 class="heading" id="education-title">
         My <span>Journey</span>
     </h2>
 
@@ -188,11 +205,11 @@
                 <i class='bx bxs-graduation'></i>
             </div>
 
-            <span class="year">2023 - 2027</span>
+            <span class="year" id="edu-year-1">2023 - 2027</span>
 
-            <h3>B.Tech Computer Science</h3>
+            <h3 id="edu-title-1">B.Tech Computer Science</h3>
 
-            <p>
+            <p id="edu-text-1">
                 Vikash Institute of Technology, Bargarh
                 <br>
                 BPUT University
@@ -206,11 +223,11 @@
                 <i class='bx bxs-school'></i>
             </div>
 
-            <span class="year">2021 - 2023</span>
+            <span class="year" id="edu-year-2">2021 - 2023</span>
 
-            <h3>Higher Secondary (12th)</h3>
+            <h3 id="edu-title-2">Higher Secondary (12th)</h3>
 
-            <p>
+            <p id="edu-text-2">
                 Vikash Higher Secondary School
                 <br>
                 CHSE Board
@@ -224,11 +241,11 @@
                 <i class='bx bxs-book'></i>
             </div>
 
-            <span class="year">2020 - 2021</span>
+            <span class="year" id="edu-year-3">2020 - 2021</span>
 
-            <h3>Secondary School (10th)</h3>
+            <h3 id="edu-title-3">Secondary School (10th)</h3>
 
-            <p>
+            <p id="edu-text-3">
                 Janta Govt. High School
                 <br>
                 BSE Board
@@ -244,11 +261,11 @@
                 <i class='bx bx-code-alt'></i>
             </div>
 
-            <span class="year">2024</span>
+            <span class="year" id="edu-year-4">2024</span>
 
-            <h3>Frontend Development</h3>
+            <h3 id="edu-title-4">Frontend Development</h3>
 
-            <p>
+            <p id="edu-text-4">
                 Learning and building projects using
                 HTML, CSS, JavaScript, React.js,
                 and modern web technologies.
@@ -260,11 +277,11 @@
                 <i class='bx bx-chat'></i>
             </div>
 
-            <span class="year">2023</span>
+            <span class="year" id="edu-year-5">2023</span>
 
-            <h3>Communication Skills</h3>
+            <h3 id="edu-title-5">Communication Skills</h3>
 
-            <p>
+            <p id="edu-text-5">
                 Developed communication and teamwork
                 skills through academics and practical
                 collaboration.
@@ -276,11 +293,11 @@
                 <i class='bx bx-bulb'></i>
             </div>
 
-            <span class="year">2021</span>
+            <span class="year" id="edu-year-6">2021</span>
 
-            <h3>Content Creation Volunteer</h3>
+            <h3 id="edu-title-6">Content Creation Volunteer</h3>
 
-            <p>
+            <p id="edu-text-6">
                 Created social content, blogs,
                 graphics, and collaborated with
                 teams on creative projects.
@@ -296,7 +313,7 @@
 
 <section class="projects" id="projects">
 
-    <h2 class="heading">My <span>Projects</span></h2>
+    <h2 class="heading" id="projects-title">My <span>Projects</span></h2>
 
     <div class="projects-container">
 
@@ -305,9 +322,9 @@
         <div class="project-card">
             <i class='bx bx-cart'></i>
 
-            <h3>E-Commerce Website</h3>
+            <h3 id="project-title-1">E-Commerce Website</h3>
 
-            <p>
+            <p id="project-text-1">
                 Developed a responsive E-Commerce platform with
                 product listings, category filtering, shopping cart,
                 and user-friendly interface. Designed to provide
@@ -327,9 +344,9 @@
         <div class="project-card">
             <i class='bx bx-group'></i>
 
-            <h3>Employee Management System</h3>
+            <h3 id="project-title-2">Employee Management System</h3>
 
-            <p>
+            <p id="project-text-2">
                 Built an Employee Management System for managing
                 employee records, task assignments, attendance,
                 and performance tracking with an intuitive dashboard.
@@ -347,9 +364,9 @@
 
         <div class="project-card">
             <i class='bx bx-data'></i>
-<h3>TalentBridge - College Placement Management System</h3>
+<h3 id="project-title-3">TalentBridge - College Placement Management System</h3>
 
-<p>
+<p id="project-text-3">
     Designed and developed a full-stack Placement Management System that
     streamlines campus recruitment by connecting students, companies,
     and administrators. Features include secure registration and login,
@@ -376,7 +393,7 @@
      <!-- SKILL SECTION DESIGN -->
       <!-- SKILLS SECTION -->
 <section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
+    <h2 class="heading" id="skills-title">My <span>Skills</span></h2>
 
     <div class="skills-container">
 
@@ -472,34 +489,34 @@
     <section class="contact" id="contact">
         <div class="skillsBox">
                     <div class="skillsContent">
-        <h2 class="heading">Contact <span>me!</span></h2>
+        <h2 class="heading" id="contact-title">Contact <span>me!</span></h2>
         <form action="https://formspree.io/f/mrbqgawe" method="POST">
             <div class="inputBox">
                 <div class="inputField">
-                    <input type="text" name="name" placeholder="Full Name"required>
+                    <input type="text" name="name" id="contact-name" placeholder="Full Name"required>
                     <span class="focus"></span>
                 </div>
                 <div class="inputField">
-                    <input type="text" name="emailId" placeholder="Email Address"required>
+                    <input type="text" name="emailId" id="contact-email" placeholder="Email Address"required>
                     <span class="focus"></span>
                 </div>
             </div>
             <div class="inputBox">
                 <div class="inputField">
-                    <input type="number" name="mobilenum" placeholder="Mobile Number"required>
+                    <input type="number" name="mobilenum" id="contact-mobile" placeholder="Mobile Number"required>
                     <span class="focus"></span>
                 </div>
                 <div class="inputField">
-                    <input type="text" name="subject" placeholder="Email Subject"required>
+                    <input type="text" name="subject" id="contact-subject" placeholder="Email Subject"required>
                     <span class="focus"></span>
                 </div>
             </div>
             <div class="textareaField">
-                <textarea name="" id=""cols="30"rows="10" name="message" placeholder="Your message"required></textarea>
+                <textarea name="" id="contact-message" cols="30" rows="10" name="message" placeholder="Your message"required></textarea>
                 <span class="focus"></span>
             </div>
             <div class="btn-box">
-                <button type="submit"class="btn">Submit</button>
+                <button type="submit"class="btn" id="contact-submit">Submit</button>
             </div>
         </form>
     </section>
@@ -509,12 +526,12 @@
 
         <div class="footer-top">
             <div class="footer-brand">
-                <h2>Let's Build Something Amazing</h2>
-                <p>
+                <h2 id="footer-heading">Let's Build Something Amazing</h2>
+                <p id="footer-text">
                     Passionate Frontend Developer creating modern,
                     responsive and user-friendly web experiences.
                 </p>
-                <a href="#contact" class="resume-btn">Let's Talk</a>
+                <a href="#contact" class="resume-btn" id="footer-btn">Let's Talk</a>
 
                 <div class="social-links">
                     <a href="https://www.facebook.com/share/1EQAjYRVE8/?mibextid=wwXIfr"><i class='bx bxl-facebook'></i></a>
@@ -526,17 +543,17 @@
 
             <div class="footer-widgets">
                 <div class="footer-widget">
-                    <h3>Quick Links</h3>
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#education">Education</a>
-                    <a href="#projects">Project</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contact">Contact</a>
+                    <h3 id="footer-links-title">Quick Links</h3>
+                    <a href="#home" id="footer-link-home">Home</a>
+                    <a href="#about" id="footer-link-about">About</a>
+                    <a href="#education" id="footer-link-education">Education</a>
+                    <a href="#projects" id="footer-link-projects">Project</a>
+                    <a href="#skills" id="footer-link-skills">Skills</a>
+                    <a href="#contact" id="footer-link-contact">Contact</a>
                 </div>
 
                 <div class="footer-widget">
-                    <h3>Tech Stack</h3>
+                    <h3 id="footer-tech-title">Tech Stack</h3>
                     <div class="tech-tags">
                         <span>HTML5</span>
                         <span>CSS3</span>
@@ -548,19 +565,19 @@
                 </div>
 
                 <div class="footer-widget">
-                    <h3>Highlights</h3>
+                    <h3 id="footer-highlights-title">Highlights</h3>
                     <ul>
-                        <li>✓ Frontend Developer</li>
-                        <li>✓ React Projects</li>
-                        <li>✓ Responsive Design Expert</li>
-                        <li>✓ Internship Completed</li>
+                        <li id="highlight-1">✓ Frontend Developer</li>
+                        <li id="highlight-2">✓ React Projects</li>
+                        <li id="highlight-3">✓ Responsive Design Expert</li>
+                        <li id="highlight-4">✓ Internship Completed</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>Crafted with ❤️ by Gagan | © 2026</p>
+            <p id="footer-bottom">Crafted with ❤️ by Gagan | © 2026</p>
         </div>
 
     </footer>
